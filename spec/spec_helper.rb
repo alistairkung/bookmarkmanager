@@ -21,7 +21,7 @@ require './app/models/link'
 require './app/app'
 require 'database_cleaner'
 
-Capybara.app = Bookmark_manager
+Capybara.app = BookmarkManager
 
 RSpec.configure do |config|
 
