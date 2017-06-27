@@ -1,4 +1,5 @@
 feature 'adding links' do
+
   scenario 'I would like to be able to add links to the website' do
     visit '/links/new'
     fill_in 'title', with: 'BBC'
