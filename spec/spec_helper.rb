@@ -21,6 +21,7 @@ require './app/models/link'
 require './app/app'
 require 'database_cleaner'
 require './spec/web_helpers.rb'
+require_relative 'helpers/session'
 
 
 Capybara.app = BookmarkManager
@@ -49,5 +50,8 @@ RSpec.configure do |config|
   end
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
+
+  config.include SessionHelpers
+
 
 end
