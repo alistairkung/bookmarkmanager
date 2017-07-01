@@ -6,7 +6,7 @@
   <body>
     <form action="/signup" method="post">
       <label for="email">email
-        <input type="text" name="email" value="<%= @user.email %>"">
+        <input type="text" name="email" value="<%= @user.email %>" required>
       </label>
       <label for="password">password:
         <input type="password" name="password" />
